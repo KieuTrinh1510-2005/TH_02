@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách môn học yêu thích</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: beige;
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(7, 7, 7);
+        }
+        
+        ul {
+            padding: 0;
+            margin: 0 auto;
+            max-width: 400px;
+            list-style-type: none;
+        }
+        
+        li {
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background-color: #ca7fba;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        li:nth-child(odd) {
+            background-color: #4fb0ce;
+        }
+        
+        li:nth-child(even) {
+            background-color: #5a8cbe;
+        }
+        
+        li:hover {
+            background-color: #a82222;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Môn học yêu thích</h2>
+    <ul>
+        <li id="m1"> Nguyên lí kế toán </li>
+        <li id="m2"> Đồ họa ứng dụng </li>
+        <li id="m3"> Cơ sở dữ liệu </li>
+        <li id="m4"> Marketing số </li>
+        <li id="m5"> Kỹ năng giao tiếp </li>
+    </ul>
+</body>
+
+</html>
