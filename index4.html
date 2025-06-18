@@ -1,40 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<style>
-    h4 {}
-</style>
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Form đăng ký thông tin</title>
+    <title>Form Đăng Ký Thông Tin</title>
+    <style>
+        body {
+            background-color: #f4dbf5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+        }
+        
+        h2 {
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+        
+        button:hover {
+            background-color: #df66d5;
+        }
+    </style>
 </head>
 
 <body>
-    <h4>Form Đăng ký Thông tin Cá nhân</h4>
-    <form action="#" method="post">
-        <label for="name">Họ và tên:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Số điện thoại:</label>
-        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
-
-        <label><div>Giới tính:</div></label>
-        <div class="gender-group">
-            <input type="radio" id="male" name="gender" value="Nam" required>
-            <label for="male">Nam</label><br>
-
-            <input type="radio" id="female" name="gender" value="Nữ">
-            <label for="female">Nữ</label><br>
-
-            <input type="radio" id="other" name="gender" value="Khác">
-            <label for="other">Khác</label>
-        </div>
-        <button type="submit">Gửi</button>
-    </form>
+    <div class="form-container">
+        <h2> Form Đăng Ký Thông Tin</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ tên">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới tính</label>
+                <select id="gender" name="gender">
+          <option value="">-- Chọn giới tính --</option>
+          <option value="male">Nam</option>
+          <option value="female">Nữ</option>
+          <option value="other">Khác</option>
+        </select>
+            </div>
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
 
 </body>
 
