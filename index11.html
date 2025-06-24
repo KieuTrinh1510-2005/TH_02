@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng nhập</title>
+</head>
+<style>
+    .pass{
+        padding: 10px;
+        padding-left: 14px;
+    }
+
+    
+    h1{
+        padding-bottom: 20px;  
+    }
+    button{
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+ 
+    }
+    input{
+        border-radius: 5px;
+        border: 1px solid rgb(181, 191, 38);
+    }
+    button:hover{
+        color:rgb(247, 231, 138)
+
+    }
+    button:active{
+        text-decoration: underline;
+    }
+    form{
+    background-color: rgb(245, 253, 220);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    width: 90%;
+    margin: 50px auto; 
+    box-sizing: border-box;
+    text-align: center;
+    }
+    .butt{
+        margin-left: 165px ;
+        padding-top: 20px;
+    }
+
+    
+</style>
+<body>
+
+    <form action="Đăng nhập">
+            <h1>
+        Form Đăng Nhập
+            </h1>
+        <div class="acc">
+            <lable for="username" required >Tài khoản</lable>
+            <input type="text">
+        </div> 
+        <div class="pass">
+            <lable for="password" required>Mật khẩu</lable>
+            <input type="password">
+        </div>
+        <div class="butt">
+            <button type="submit">Đăng nhập</button>
+        </div>
+    </form>
+</body>
+</html>
