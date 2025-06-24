@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: rgb(72, 72, 2);
+    }
+    body {
+    background-color: #f1ffbf; 
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.project-card:hover {
+    color: rgb(222, 91, 174);
+}
+.project-card img {
+    width: 100%;
+    height: 300px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.
+</style>
+<body>
+    <h1>Portfolio</h1>
+    <section class="portfolio">
+    <div class="project-card">
+        <img src="https://bazaarvietnam.vn/wp-content/uploads/2021/08/thuc-don-eat-clean-7-ngay-18.jpg" alt="Mô tả dự án 1">
+        <div class="project-info">
+            <h3>Dự án 100 ngày thực đơn eatclean với KieuTrin</h3>
+            <p>Mô tả: Đây là dự án hướng tới những người đang có nhu cầu giảm cân, giữ dáng cho các chị em phụ nữ. Các bữa ăn sẽ được phân chia khoa học, ăn nhưng không nhàm chán
+                vẫn đảm bảo đầy đủ các chất dinh dưỡng cho cơ thể.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="https://cdn.xanhsm.com/2025/02/9bd8c162-cafe-meo-tphcm-20.jpg" alt="Mô tả dự án 2">
+        <div class="project-info">
+            <h3>Dự án cafe mèo tại Bình Định</h3>
+            <p>Mô tả: Dự án hướng tới tệp khách hàng yêu thích động vật, vừa có thể làm việc hoặc học bài chung với các em mèo xinh xắn đáng yêu.
+                Chưa từng có quán cafe mèo nào ở Bình Định, mang tới luồng trải nghiệm mới phù hợp sẽ phát triển nhiều quán hơn.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <img src="https://media.loveitopcdn.com/26498/10-du-an-trong-cay-xanh-tren-khap-the-gioi.jpg" alt="Mô tả dự án 3">
+        <div class="project-info">
+            <h3>Dự án chung tay tạo môi trường xanh</h3>
+            <p>Mô tả: Trồng cây xanh góp phần cải thiện bầu không khí cho Trái Đất. Mà qua đó các em nhỏ và người lớn cũng được học cách chăm sóc, tưới nước, kiến thức
+                về cây xanh, phổ cập kiến thức cho các em về việc trồng cây gây rừng, phòng chống sạt lở đất, ....</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
