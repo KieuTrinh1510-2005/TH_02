@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát ý kiến</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .survey-form {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        .option-group {
+            margin-bottom: 10px;
+        }
+        
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.1);
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical;
+            min-height: 100px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>KHẢO SÁT Ý KIẾN</h1>
+    
+    <form class="survey-form">
+        <!-- Câu hỏi radio -->
+        <div class="form-group">
+            <label>1. Bạn hài lòng với chất lượng sản phẩm/dịch vụ của chúng tôi?</label>
+            <div class="option-group">
+                <input type="radio" id="satisfied1" name="satisfaction" value="very-satisfied">
+                <label for="satisfied1">Rất hài lòng</label>
+            </div>
+            <div class="option-group">
+                <input type="radio" id="satisfied2" name="satisfaction" value="satisfied">
+                <label for="satisfied2">Hài lòng</label>
+            </div>
+            <div class="option-group">
+                <input type="radio" id="satisfied3" name="satisfaction" value="neutral">
+                <label for="satisfied3">Bình thường</label>
+            </div>
+            <div class="option-group">
+                <input type="radio" id="satisfied4" name="satisfaction" value="unsatisfied">
+                <label for="satisfied4">Không hài lòng</label>
+            </div>
+            <div class="option-group">
+                <input type="radio" id="satisfied5" name="satisfaction" value="very-unsatisfied">
+                <label for="satisfied5">Rất không hài lòng</label>
+            </div>
+        </div>
+        
+
+        <div class="form-group">
+            <label>2. Bạn biết đến chúng tôi qua kênh nào? (Có thể chọn nhiều đáp án)</label>
+            <div class="option-group">
+                <input type="checkbox" id="channel1" name="channel" value="facebook">
+                <label for="channel1">Facebook</label>
+            </div>
+            <div class="option-group">
+                <input type="checkbox" id="channel2" name="channel" value="google">
+                <label for="channel2">Google</label>
+            </div>
+            <div class="option-group">
+                <input type="checkbox" id="channel3" name="channel" value="friend">
+                <label for="channel3">Bạn bè giới thiệu</label>
+            </div>
+            <div class="option-group">
+                <input type="checkbox" id="channel4" name="channel" value="other">
+                <label for="channel4">Khác</label>
+            </div>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="feedback">3. Ý kiến đóng góp của bạn để chúng tôi cải thiện dịch vụ:</label>
+            <textarea id="feedback" name="feedback" placeholder="Vui lòng nhập ý kiến của bạn tại đây..."></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Gửi khảo sát</button>
+    </form>
+</body>
+</html>
