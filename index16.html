@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng điện thoại</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 15px;
+        }
+        
+        .product-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        
+        .product-price {
+            font-size: 20px;
+            color: #e74c3c;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .buy-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>ĐIỆN THOẠI NỔI BẬT</h1>
+    
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="https://img.global.news.samsung.com/vn/wp-content/uploads/2019/03/Galaxy-A50-Mat-truoc-3.jpg" alt="iPhone 15" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">iPhone 15 Pro Max</h3>
+                <div class="product-price">28.990.000₫</div>
+                <button class="buy-btn">THÊM VÀO GIỎ</button>
+            </div>
+        </div>
+        
+    
+        <div class="product-card">
+            <img src="https://cdnv2.tgdd.vn/mwg-static/common/News/1569924/9.jpg" alt="Samsung S23" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Samsung Galaxy S23 Ultra</h3>
+                <div class="product-price">24.990.000₫</div>
+                <button class="buy-btn">THÊM VÀO GIỎ</button>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://danviet.ex-cdn.com/files/f1/upload/2-2019/images/2019-06-25/3-1561430885-width660height440.jpg" alt="Xiaomi 13" class="product-image">
+            <div class="product-info">
+                <h3 class="product-name">Xiaomi 13 Pro</h3>
+                <div class="product-price">16.990.000₫</div>
+                <button class="buy-btn">THÊM VÀO GIỎ</button>
+            </div>
+        </div>
+        
+        </div>
+        </div>
+    </div>
+</body>
+</html>
